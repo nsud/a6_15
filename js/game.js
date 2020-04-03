@@ -58,11 +58,14 @@ function handleClick(event) {
 function init() {
   $("#button-start").click(function() {
     round();
-      $(".game-field").click(handleClick);
+    $(".game-field").click(handleClick);
+    $("#button-start").hide();
   });
 
   $("#button-reload").click(function() {
     location.reload();
+    $("#button-start").show();
+
   });
 }
 
